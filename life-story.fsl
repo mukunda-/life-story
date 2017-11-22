@@ -1,0 +1,19 @@
+machine_name     : "Life Story";
+machine_author   : "Mukunda Johnson <mukunda@mukunda.com>";
+machine_license  : MIT;
+machine_comment  : "Life is great. Woohoo.";
+machine_language : en;
+machine_version  : 1.0.0;
+fsl_version      : 1.0.0;
+start_states     : [Conception];
+
+Conception => "Cramped in the womb for several months." => "Squeezed out of a vagina." => "Have no idea what's going on, but things are okay." => Baby;
+
+"Squeezed out of a vagina." 'Ouch.. (legal transition???)' -> "Might kill your mom because that's what it takes to shit all eight of your pounds." => Baby;
+
+Baby 'Grow up and get fed.' => Kid;
+
+Kid 'Good Parents/Influence...' => "Good Kid" 'Go to school and appreciate it.' => "Smart Kid" 'Grow Up...' => Teenager;
+Kid 'Bad Parents/Influence...' => "Shit Morals" 'Piss everyone off.' => Ragamuffin 'Grow Up...' => Teenager;
+
+Teenager => "To be continued...";
